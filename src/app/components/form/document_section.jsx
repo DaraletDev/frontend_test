@@ -6,6 +6,7 @@ import Customer, { customersList } from '../../../../models/customer.model';
 import { branchOfficesList } from '../../../../models/branch_office.model';
 import Modal from 'react-modal';
 import Address from '../../../../models/address.model';
+import AddCustomerModal from '../customerModal';
 
 const DocumentSection = ({
     setSaleData,
@@ -17,13 +18,13 @@ const DocumentSection = ({
 }) => {
     const [branchOffices, setBranchOffices] = useState([]);
     const [customers, setCustomers] = useState([]);
-    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [modalIsOpen, setIsOpen] = useState(false);
 
     const [newClient, setNewClient] = useState({
         rut: '',
         name: '',
         last_name: '',
-        street: '', // Agrega estos campos
+        street: '',
         number: '',
         district: '',
         city: '',
@@ -120,7 +121,7 @@ const DocumentSection = ({
             phoneNumber: ''
         });
 
-        console.log(newCustomer)
+        console.log(newCustomer);
 
         // Cerrar el modal después de agregar el cliente
         closeModal();
@@ -159,154 +160,15 @@ const DocumentSection = ({
                         >
                             <FontAwesomeIcon icon={faPlus} />
                         </button>
-                        <Modal
-                            isOpen={modalIsOpen}
-                            // onAfterOpen={afterOpenModal}
-                            onRequestClose={closeModal}
-                            style={customStyles}
-                            contentLabel="Example Modal"
-                        >
-                            <button onClick={() => setIsOpen(false)}>
-                                <FontAwesomeIcon icon={faX} />
-                            </button>
-                            <div className="text-center text-2xl">
-                                Añadir Nuevo Cliente
-                            </div>
-                            <form
-                                onSubmit={handleAddClient}
-                                className="px-20 space-y-10"
-                            >
-                                <div className="flex flex-col">
-                                    <label htmlFor="nombre_cliente">
-                                        Nombre
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        value={newClient.name}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                name: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="apellido_cliente">
-                                        Apellido
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="last_name"
-                                        value={newClient.last_name}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                last_name: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="rut_cliente">Rut</label>
-                                    <input
-                                        type="text"
-                                        name="rut"
-                                        value={newClient.rut}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                rut: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="direccion_cliente">
-                                        Dirección
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="street"
-                                        value={newClient.street}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                street: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="numero_cliente">
-                                        Número
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="number"
-                                        value={newClient.number}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                number: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="comuna_cliente">
-                                        Comuna
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="district"
-                                        value={newClient.district}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                district: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="ciudad_cliente">
-                                        Ciudad
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="city"
-                                        value={newClient.city}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                city: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <label htmlFor="telefono_cliente">
-                                        Número de teléfono
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="phoneNumber"
-                                        value={newClient.phoneNumber}
-                                        onChange={(e) =>
-                                            setNewClient({
-                                                ...newClient,
-                                                phoneNumber: e.target.value
-                                            })
-                                        }
-                                        className="bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
-                                    />
-
-                                    <input type="submit" />
-                                </div>
-                            </form>
-                        </Modal>
+                    
+                        <AddCustomerModal
+                            newClient={newClient}
+                            modalIsOpen={modalIsOpen}
+                            closeModal={closeModal}
+                            handleAddClient={handleAddClient}
+                            setNewClient={setNewClient}
+                            setIsOpen={setIsOpen}
+                        />
                     </div>
                 </div>
 

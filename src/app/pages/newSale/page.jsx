@@ -5,6 +5,7 @@ import DetailsSection from '@/app/components/form/details_section';
 import AdminLayout from '@/app/pages/admin/page';
 import { v4 as uuidv4 } from 'uuid';
 import Sale from '../../../../models/sale.model';
+import { toast } from 'react-toastify';
 
 const NewSale = () => {
     // Document Section
@@ -34,7 +35,10 @@ const NewSale = () => {
     };
 
     const handleAddDetail = () => {
-        setDetails((prevDetails) => [...prevDetails, { id: uuidv4(), quantity: 1 }]);
+        setDetails((prevDetails) => [
+            ...prevDetails,
+            { id: uuidv4(), quantity: 1 }
+        ]);
     };
 
     const handleDeleteDetail = (id) => {
@@ -89,7 +93,12 @@ const NewSale = () => {
             });
 
             console.log('Venta añadida:', newSale);
-
+            toast.success('Venta añadida correctamente.', {
+                position: 'top-right',
+                autoClose: 1200,
+                pauseOnHover: false,
+                theme: 'light'
+            });
             setDetails([]);
             clearSaleData();
         } catch (error) {
@@ -105,6 +114,7 @@ const NewSale = () => {
                 </h2>
                 <div className="h-1 bg-slate-300 mt-3"></div>
             </div>
+
             <form className="space-y-10 scroll-auto" onSubmit={handleSubmit}>
                 <DocumentSection
                     setSaleData={setSaleData}

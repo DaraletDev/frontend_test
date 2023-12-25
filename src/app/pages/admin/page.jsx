@@ -1,5 +1,6 @@
 'use client';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,6 +16,8 @@ const AdminLayout = ({ children }) => {
 
     return (
         <div className="flex overflow-hidden min-h-screen">
+            <ToastContainer />
+
             <div className="bg-blue-500 w-20 text-center py-10">
                 <ul className="text-white flex flex-col">
                     {items.map((item) => (

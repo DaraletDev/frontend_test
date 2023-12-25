@@ -78,10 +78,10 @@ const AllSalesPage = () => {
                                     <td className="py-2 px-4">{sale.total}</td>
                                     <td>
                                         <button
-                                            className={`${
+                                            className={`w-full rounded  ${
                                                 selectedSale == sale
-                                                    ? ' bg-gray-200 text-black'
-                                                    : 'bg-blue-500 text-white'
+                                                    ? ' bg-gray-200 text-black hover:bg-gray-300'
+                                                    : 'bg-blue-500 text-white hover:bg-blue-400'
                                             } font-bold px-3 py-2 text-xs`}
                                             onClick={() => toggleDetails(sale)}
                                         >
