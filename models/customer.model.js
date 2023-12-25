@@ -11,7 +11,7 @@ class Customer {
         this.phoneNumber = phoneNumber;
     }
 }
-
+export default Customer
 // Mapear datos y crear instancias de Customer
 const customers = customersData.customers.map((customerData) => {
     const address = new Address(
