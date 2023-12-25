@@ -1,0 +1,30 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "rut": "12345678-9",
+            "name": "Cliente 1",
+            "last_name": "Apellido Cliente 1",
+            "address": {
+                "street": "street Cliente 1",
+                "number": "123",
+                "district": "Comuna Cliente 1",
+                "city": "Ciudad Cliente 1"
+            },
+            "phone_number": "+56 9 1234 5678"
+        },
+        {
+            "id": 2,
+            "rut": "98765432-1",
+            "name": "Cliente 2",
+            "last_name": "Apellido Cliente 2",
+            "address": {
+                "street": "Calle Cliente 2",
+                "number": "456",
+                "district": "Comuna Cliente 2",
+                "city": "Ciudad Cliente 2"
+            },
+            "phone_number": "+56 9 9876 5432"
+        }
+    ]
+}

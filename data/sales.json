@@ -1,0 +1,56 @@
+{
+  "sales": [
+    {
+      "id_sale": 1,
+      "date_sale": "2023-03-22",
+      "document": {
+        "client": "Cliente 1",
+        "branch_office": "Sucursal 1",
+        "currency": "USD"
+      },
+      "details": [
+        {
+          "id": 1,
+          "name": "Condenser USB Microphone",
+          "quantity": 2,
+          "price": 2000,
+          "subtotal": 4000
+        },
+        {
+          "id": 2,
+          "name": "Condenser USB Microphone2",
+          "quantity": 2,
+          "price": 2000,
+          "subtotal": 4000
+        }
+      ],
+      "total": 8000
+    },
+    {
+      "id_sale": 2,
+      "date_sale": "2023-03-22",
+      "document": {
+        "client": "Cliente 2",
+        "branch_office": "Sucursal 2",
+        "currency": "EUR"
+      },
+      "details": [
+        {
+          "id": 3,
+          "name": "Product A",
+          "quantity": 1,
+          "price": 1000,
+          "subtotal": 1000
+        },
+        {
+          "id": 4,
+          "name": "Product B",
+          "quantity": 3,
+          "price": 500,
+          "subtotal": 1500
+        }
+      ],
+      "total": 2500
+    }
+  ]
+}

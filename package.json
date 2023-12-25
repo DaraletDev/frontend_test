@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch data/details.json --port 3001"
+    "json-server": "json-server --watch data/sales.json data/products.json --port 3001"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -15,9 +15,12 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@lottiefiles/lottie-player": "^2.0.2",
     "lottie-react": "^2.4.0",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-select": "^5.8.0",
+    "react-table": "^7.8.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

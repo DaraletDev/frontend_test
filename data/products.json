@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Laptop",
+            "price": 1200,
+            "stock": 50,
+            "branch_office_id": 2
+        },
+        {
+            "id": 2,
+            "name": "Smartphone",
+            "price": 800,
+            "stock": 30,
+            "branch_office_id": 1
+        },
+        {
+            "id": 3,
+            "name": "Tablet",
+            "price": 500,
+            "stock": 20,
+            "branch_office_id": 3
+        },
+        {
+            "id": 4,
+            "name": "Desktop PC",
+            "price": 1500,
+            "stock": 25,
+            "branch_office_id": 5
+        },
+        {
+            "id": 5,
+            "name": "Printer",
+            "price": 300,
+            "stock": 15,
+            "branch_office_id": 1
+        },
+        {
+            "id": 6,
+            "name": "Printer",
+            "price": 300,
+            "stock": 15,
+            "branch_office_id": 1
+        },
+        {
+            "id": 6,
+            "name": "Printer",
+            "price": 300,
+            "stock": 15,
+            "branch_office_id": 1
+        },
+        {
+            "id": 6,
+            "name": "Printer",
+            "price": 300,
+            "stock": 15,
+            "branch_office_id": 1
+        }
+    ]
+}

@@ -13,7 +13,7 @@ const Header = () => {
                         <Link href={''}>Content 2</Link>
                     </li>
                     <li className='text-blue-500'>
-                        <Link href='/pages/admin'>Login</Link>
+                        <Link href='/pages/newSale'>Login</Link>
                     </li>
                 </ul>
             </nav>

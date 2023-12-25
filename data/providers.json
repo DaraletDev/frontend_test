@@ -1,0 +1,28 @@
+{
+    "providers": [
+        {
+            "rut": "11223344-5",
+            "name": "Proveedor 1",
+            "address": {
+                "street": "street Proveedor 1",
+                "number": "789",
+                "district": "district Proveedor 1",
+                "city": "city Proveedor 1"
+            },
+            "phone_number": "+56 9 1122 3344",
+            "web_page": "http://www.proveedor1.com"
+        },
+        {
+            "rut": "55443322-1",
+            "nombre": "Proveedor 2",
+            "address": {
+                "street": "street Proveedor 2",
+                "number": "987",
+                "district": "district Proveedor 2",
+                "city": "city Proveedor 2"
+            },
+            "phone_number": "+56 9 5544 3322",
+            "web_page": "http://www.proveedor2.com"
+        }
+    ]
+}

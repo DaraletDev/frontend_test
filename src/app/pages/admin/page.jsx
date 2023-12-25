@@ -1,33 +1,41 @@
 'use client';
-import Layout from '@/app/components/layout';
-import React, { useState } from 'react';
-import DocumentSection from '@/app/components/form/document_section';
-import DetailsSection from '@/app/components/form/details_section';
 
-const Admin = () => {
-    const [items, setItems] = useState([]);
+import React from 'react';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faList } from '@fortawesome/free-solid-svg-icons';
+import { usePathname } from 'next/navigation';
 
-    const handleAddItem = () => {
-        setItems((prevItems) => [...prevItems, { id: Date.now() }]);
-    };
+const AdminLayout = ({ children }) => {
+    const pathname = usePathname();
+    const items = [
+        { id: 0, icon: faPlus, label: 0, route: '/pages/newSale' },
+        { id: 1, icon: faList, label: 1, route: '/pages/sales' }
+    ];
 
-    const handleRemoveItem = (itemId) => {
-        setItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
-    };
     return (
-        <Layout>
-            <div className="pb-10">
-                <h2 className="w-full text-slate-700 text-4xl font-extrabold">
-                    New Sale
-                </h2>
-                <div className="h-1 bg-slate-300 mt-3"></div>
+        <div className="flex overflow-hidden min-h-screen">
+            <div className="bg-blue-500 w-20 text-center py-10">
+                <ul className="text-white flex flex-col">
+                    {items.map((item) => (
+                        <li
+                            key={item.id}
+                            className={`cursor-pointer py-5 ${
+                                pathname == item.route
+                                    ? 'font-bold bg-blue-700'
+                                    : ''
+                            }`}
+                        >
+                            <Link href={`${item.route}`}>
+                                <FontAwesomeIcon icon={item.icon} />
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <form className="space-y-10">
-                <DocumentSection />
-                <DetailsSection />
-            </form>
-        </Layout>
+            <div className="w-full px-20 py-10 bg-[#F6F7FA]">{children}</div>
+        </div>
     );
 };
 
-export default Admin;
+export default AdminLayout;
