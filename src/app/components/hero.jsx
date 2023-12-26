@@ -4,6 +4,7 @@ import Button from './button';
 import Image from 'next/image';
 import HeroAnimation from './hero_animation';
 import Header from './header';
+import Link from 'next/link';
 const Hero = () => {
     return (
         <>
@@ -18,9 +19,9 @@ const Hero = () => {
                         elit. In dicta sint voluptate doloribus, deleniti, nam
                         corrupti qui quisquam voluptatem
                     </p>
-                    <Button>
-                        <p className="uppercase">Login</p>
-                    </Button>
+                    <button className="uppcercase bg-blue-500 text-white font-bold px-7 py-2">
+                        <Link href="/pages/newSale">Login</Link>
+                    </button>
                 </div>
                 <div className="relative">
                     <Image
