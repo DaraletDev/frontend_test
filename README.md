@@ -6,7 +6,15 @@
 npm i
 ```
 
-### [ 2 ] Ejecute el servidor de desarrollo:
+### [ 2 ] Ejecute el servidor JSON
+
+Debe ejecutar el siguiente comando en otra consola:
+
+```bash
+npm run json-server
+```
+
+### [ 3 ] Ejecute el servidor de desarrollo:
 
 ```bash
 npm run dev
@@ -18,13 +26,6 @@ pnpm dev
 bun dev
 ```
 
-### [ 3 ] Ejecute el servidor JSON
-
-Debe ejecutar el siguiente comando en otra consola:
-
-```bash
-npm run json-server
-```
 
 
 Abra http://localhost:3000 
