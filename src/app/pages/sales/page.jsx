@@ -72,13 +72,12 @@ const AllSalesPage = () => {
                 </thead>
                 <tbody>
                     {currentItems.map((sale, index) => (
-                        <React.Fragment key={sale.id_sale}>
+                        <React.Fragment key={sale.id}>
                             <tr
                                 className={`${
                                     index % 2 === 0 ? 'even' : 'odd'
                                 } ${selectedSale == sale ? 'selected' : ''}`}
                             >
-                                {/* <tr className={index % 2 === 0 ? 'even' : 'odd'}> */}
                                 <td className="py-2 px-4">{sale.id}</td>
                                 <td className="py-2 px-4">
                                     {formatSaleDate(sale.date)}

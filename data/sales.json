@@ -89,6 +89,20 @@
           "price": 1794
         }
       ]
+    },
+    {
+      "id": "54344305-2a34-42e4-96df-5bf68d6dbebc",
+      "date": "2023-12-26T01:32:43.907Z",
+      "customer": 1,
+      "branchOffice": "Peru",
+      "currency": "PEN",
+      "details": [
+        {
+          "name": "Product 12",
+          "quantity": 1,
+          "price": 1300
+        }
+      ]
     }
   ]
 }

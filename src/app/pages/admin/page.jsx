@@ -25,21 +25,20 @@ const AdminLayout = ({ children }) => {
         <div className="flex overflow-hidden min-h-screen">
             <ToastContainer />
 
-            <div className="bg-blue-500 min-w-20 text-center py-10">
+            <div className="bg-blue-500 w-20 text-center py-10">
                 <ul className="text-white flex flex-col">
                     {items.map((item) => (
-                        <li
-                            key={item.id}
-                            className={`cursor-pointer py-5 ${
-                                pathname == item.route
-                                    ? 'font-bold bg-blue-700'
-                                    : 'hover:bg-blue-400'
-                            }`}
-                        >
-                            <Link href={`${item.route}`}>
+                        <Link key={item.id} href={`${item.route}`}>
+                            <li
+                                className={`cursor-pointer py-5 ${
+                                    pathname == item.route
+                                        ? 'font-bold bg-blue-700'
+                                        : 'hover:bg-blue-400'
+                                }`}
+                            >
                                 <FontAwesomeIcon icon={item.icon} />
-                            </Link>
-                        </li>
+                            </li>
+                        </Link>
                     ))}
                 </ul>
             </div>
