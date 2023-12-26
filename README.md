@@ -1,12 +1,12 @@
 ## Ejecutar el Proyecto
 
-# [ 1 ] Abra la consola del archivo e instale los paquetes utilizados:
+### [ 1 ] Abra la consola del archivo e instale los paquetes utilizados:
 
 ```bash
 npm i
 ```
 
-# [ 2 ] Ejecute el servidor de desarrollo:
+### [ 2 ] Ejecute el servidor de desarrollo:
 
 ```bash
 npm run dev
@@ -18,7 +18,7 @@ pnpm dev
 bun dev
 ```
 
-# [ 3 ] Ejecute el servidor JSON
+### [ 3 ] Ejecute el servidor JSON
 
 Debe ejecutar el siguiente comando en otra consola:
 
