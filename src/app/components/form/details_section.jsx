@@ -9,8 +9,8 @@ const DetailsSection = ({
     selectedCountry
 }) => {
     return (
-        <div>
-            <h3 className="font-semibold text-slate-700 text-2xl border-b-2 border-slate-400">
+        <>
+            <h3 className="mt-6 font-semibold text-slate-700 text-2xl border-b-2 border-slate-400">
                 Details
             </h3>
             <button
@@ -32,7 +32,7 @@ const DetailsSection = ({
                     handleDeleteDetail={() => handleDeleteDetail(item.id)}
                 />
             ))}
-        </div>
+        </>
     );
 };
 

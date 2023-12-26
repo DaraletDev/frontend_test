@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faX } from '@fortawesome/free-solid-svg-icons';
-import Customer, { customersList } from '../../../../models/customer.model';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { customersList } from '../../../../models/customer.model';
 import { branchOfficesList } from '../../../../models/branch_office.model';
-import Modal from 'react-modal';
 import Address from '../../../../models/address.model';
 import AddCustomerModal from '../customerModal';
+import { toast } from 'react-toastify';
 
 const DocumentSection = ({
     setSaleData,
@@ -79,19 +79,28 @@ const DocumentSection = ({
             }));
         }
     };
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundColor: '#F6F7FA'
+
+    const handleAddClient = async () => {
+        if (
+            !newClient.rut ||
+            !newClient.name ||
+            !newClient.last_name ||
+            !newClient.street ||
+            !newClient.number ||
+            !newClient.district ||
+            !newClient.city ||
+            !newClient.phoneNumber
+        ) {
+            toast.warning('Por favor, complete todos los campos.', {
+                position: 'top-right',
+                autoClose: 1200,
+                pauseOnHover: false,
+                theme: 'light'
+            });
+            return;
         }
-    };
-    const handleAddClient = () => {
-        const newCustomerId = customers.length + 1; // Puedes ajustar esto según cómo generas IDs
+
+        const newCustomerId = customers.length + 1;
         const newAddress = new Address(
             newClient.street,
             newClient.number,
@@ -99,42 +108,51 @@ const DocumentSection = ({
             newClient.city
         );
 
-        const newCustomer = new Customer(
-            newCustomerId,
-            newClient.rut,
-            newClient.name,
-            newClient.last_name,
-            newAddress,
-            newClient.phoneNumber
-        );
+        const newCustomer = {
+            id: newCustomerId,
+            rut: newClient.rut,
+            name: newClient.name,
+            last_name: newClient.last_name,
+            address: {
+                ...newAddress
+            },
+            phoneNumber: newClient.phoneNumber
+        };
 
-        const updatedCustomers = [...customers, newCustomer];
+        const updatedCustomers = [newCustomer, ...customers];
         setCustomers(updatedCustomers);
 
-        // Limpiar la información del nuevo cliente
+        toast.success('Cliente añadido correctamente.', {
+            position: 'top-right',
+            autoClose: 1200,
+            pauseOnHover: false,
+            theme: 'light'
+        });
+
+        // Limpiar Información
         setNewClient({
-            id: '',
             rut: '',
             name: '',
             last_name: '',
-            address: '',
+            street: '',
+            number: '',
+            district: '',
+            city: '',
             phoneNumber: ''
         });
 
         console.log(newCustomer);
-
-        // Cerrar el modal después de agregar el cliente
         closeModal();
     };
 
     return (
-        <div>
+        <>
             <h3 className="font-semibold text-slate-700 text-2xl border-b-2 border-slate-400">
                 Document
             </h3>
-            <div className="flex justify-between space-x-10 pt-4">
+            <div className="flex md:justify-between space-y-3 md:space-y-0 md:space-x-10 pt-4 flex-col md:flex-row items-center">
                 {/* Client */}
-                <div className="flex flex-col w-3/6 space-y-2">
+                <div className="w-full flex flex-col md:w-3/6 space-y-2">
                     <label
                         htmlFor="client"
                         className="text-slate-400 font-semibold"
@@ -160,7 +178,7 @@ const DocumentSection = ({
                         >
                             <FontAwesomeIcon icon={faPlus} />
                         </button>
-                    
+
                         <AddCustomerModal
                             newClient={newClient}
                             modalIsOpen={modalIsOpen}
@@ -173,7 +191,7 @@ const DocumentSection = ({
                 </div>
 
                 {/* Branch Offices */}
-                <div className="flex flex-col w-3/6 space-y-2">
+                <div className="w-full flex flex-col md:w-3/6 space-y-2">
                     <label
                         htmlFor="branch_office"
                         className="text-slate-400 font-semibold"
@@ -191,7 +209,7 @@ const DocumentSection = ({
                 </div>
 
                 {/* Currency */}
-                <div className="flex flex-col w-1/6 space-y-2">
+                <div className="w-full flex flex-col md:w-1/6 space-y-2">
                     <label
                         htmlFor="currency"
                         className="text-slate-400 font-semibold"
@@ -207,7 +225,7 @@ const DocumentSection = ({
                     />
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -12,7 +12,9 @@ class Customer {
     }
 }
 export default Customer
-// Mapear datos y crear instancias de Customer
+
+
+// Poblar con datos
 const customers = customersData.customers.map((customerData) => {
     const address = new Address(
         customerData.address.street,

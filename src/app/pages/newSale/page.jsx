@@ -4,8 +4,8 @@ import DocumentSection from '@/app/components/form/document_section';
 import DetailsSection from '@/app/components/form/details_section';
 import AdminLayout from '@/app/pages/admin/page';
 import { v4 as uuidv4 } from 'uuid';
-import Sale from '../../../../models/sale.model';
 import { toast } from 'react-toastify';
+import { addSale } from '../../../../api';
 
 const NewSale = () => {
     // Document Section
@@ -66,33 +66,57 @@ const NewSale = () => {
         currencyRef.current.value = '';
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            const detailsIncomplete = details.some(
+                (detail) =>
+                    !detail.name || // Agrega aquí todas las propiedades que deben estar presentes
+                    !detail.quantity ||
+                    !detail.price
+            );
+
+            if (detailsIncomplete) {
+                toast.warning('Complete todos los campos en los detalles.', {
+                    position: 'top-right',
+                    autoClose: 1200,
+                    pauseOnHover: false,
+                    theme: 'light'
+                });
+                return;
+            }
             if (
                 !saleData.customer ||
                 !saleData.branchOffice ||
                 !saleData.currency
             ) {
-                console.error(
-                    'Por favor, complete todos los campos antes de guardar la venta.'
+                toast.warning(
+                    'Por favor, complete todos los campos antes de guardar la venta.',
+                    {
+                        position: 'top-right',
+                        autoClose: 1200,
+                        pauseOnHover: false,
+                        theme: 'light'
+                    }
                 );
                 return;
             }
 
-            const newSale = new Sale(
-                uuidv4(),
-                new Date().toISOString(),
-                saleData.customer,
-                saleData.branchOffice,
-                saleData.currency
-            );
+            const newSale = {
+                id: uuidv4(),
+                date: new Date().toISOString(),
+                customer: saleData.customer,
+                branchOffice: saleData.branchOffice,
+                currency: saleData.currency,
+                details: details.map((detail) => ({
+                    name: detail.name,
+                    quantity: detail.quantity,
+                    price: detail.price
+                }))
+            };
 
-            details.forEach((detail) => {
-                newSale.addDetail(detail.name, detail.quantity, detail.price);
-            });
+            await addSale(newSale);
 
-            console.log('Venta añadida:', newSale);
             toast.success('Venta añadida correctamente.', {
                 position: 'top-right',
                 autoClose: 1200,
@@ -115,7 +139,7 @@ const NewSale = () => {
                 <div className="h-1 bg-slate-300 mt-3"></div>
             </div>
 
-            <form className="space-y-10 scroll-auto" onSubmit={handleSubmit}>
+            <form className="scroll-auto" onSubmit={handleSubmit}>
                 <DocumentSection
                     setSaleData={setSaleData}
                     selectedCountry={selectedCountry}
@@ -146,7 +170,7 @@ const NewSale = () => {
                         className="my-5 bg-white rounded px-4 py-2 border border-none focus:outline-none focus:border-blue-500"
                     />
                 </div>
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-5">
                     <input
                         type="submit"
                         value="Save"

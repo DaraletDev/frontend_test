@@ -50,3 +50,42 @@ export const getAllSales = async () => {
         throw error;
     }
 };
+
+
+export const addCustomer = async (customer) => {
+    try {
+        const res = await fetch(`${BASE_URL}/customers`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(customer),
+        });
+
+        if (!res.ok) {
+            throw new Error(`Error: ${res.status} - ${res.statusText}`);
+        }
+
+        const newCustomer = await res.json();
+        return newCustomer;
+    } catch (error) {
+        console.error('Error adding customer:', error);
+        throw error;
+    }
+};
+
+export const getClientNameById = async (customerId) => {
+    try {
+        const res = await fetch(`${BASE_URL}/customers/${customerId}`);
+
+        if (!res.ok) {
+            throw new Error(`Error: ${res.status} - ${res.statusText}`);
+        }
+
+        const customer = await res.json();
+        return `${customer.name} ${customer.last_name}`;
+    } catch (error) {
+        console.error('Error getting client by ID:', error);
+        throw error;
+    }
+};

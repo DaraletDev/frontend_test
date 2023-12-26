@@ -1,0 +1,1330 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "rut": "12345678-9",
+      "name": "Cliente 1",
+      "last_name": "Apellido Cliente 1",
+      "address": {
+        "street": "street Cliente 1",
+        "number": "123",
+        "district": "Comuna Cliente 1",
+        "city": "Ciudad Cliente 1"
+      },
+      "phone_number": "+56 9 1234 5678"
+    },
+    {
+      "id": 2,
+      "rut": "98765432-1",
+      "name": "Cliente 2",
+      "last_name": "Apellido Cliente 2",
+      "address": {
+        "street": "Calle Cliente 2",
+        "number": "456",
+        "district": "Comuna Cliente 2",
+        "city": "Ciudad Cliente 2"
+      },
+      "phone_number": "+56 9 9876 5432"
+    },
+    {
+      "id": 3,
+      "rut": "94238000-5",
+      "name": "Cliente 3",
+      "last_name": "Apellido Cliente 3",
+      "address": {
+        "street": "Calle Cliente 3",
+        "number": "619",
+        "district": "Comuna Cliente 3",
+        "city": "Ciudad Cliente 3"
+      },
+      "phone_number": "+56 9 29792920"
+    },
+    {
+      "id": 4,
+      "rut": "20993362-9",
+      "name": "Cliente 4",
+      "last_name": "Apellido Cliente 4",
+      "address": {
+        "street": "Calle Cliente 4",
+        "number": "183",
+        "district": "Comuna Cliente 4",
+        "city": "Ciudad Cliente 4"
+      },
+      "phone_number": "+56 9 91324545"
+    },
+    {
+      "id": 5,
+      "rut": "51803103-4",
+      "name": "Cliente 5",
+      "last_name": "Apellido Cliente 5",
+      "address": {
+        "street": "Calle Cliente 5",
+        "number": "915",
+        "district": "Comuna Cliente 5",
+        "city": "Ciudad Cliente 5"
+      },
+      "phone_number": "+56 9 75448528"
+    },
+    {
+      "id": 6,
+      "rut": "89046952-6",
+      "name": "Cliente 6",
+      "last_name": "Apellido Cliente 6",
+      "address": {
+        "street": "Calle Cliente 6",
+        "number": "110",
+        "district": "Comuna Cliente 6",
+        "city": "Ciudad Cliente 6"
+      },
+      "phone_number": "+56 9 40445135"
+    },
+    {
+      "id": 7,
+      "rut": "18487481-7",
+      "name": "Cliente 7",
+      "last_name": "Apellido Cliente 7",
+      "address": {
+        "street": "Calle Cliente 7",
+        "number": "448",
+        "district": "Comuna Cliente 7",
+        "city": "Ciudad Cliente 7"
+      },
+      "phone_number": "+56 9 89012851"
+    },
+    {
+      "id": 8,
+      "rut": "46501826-3",
+      "name": "Cliente 8",
+      "last_name": "Apellido Cliente 8",
+      "address": {
+        "street": "Calle Cliente 8",
+        "number": "412",
+        "district": "Comuna Cliente 8",
+        "city": "Ciudad Cliente 8"
+      },
+      "phone_number": "+56 9 69535071"
+    },
+    {
+      "id": 9,
+      "rut": "36940294-4",
+      "name": "Cliente 9",
+      "last_name": "Apellido Cliente 9",
+      "address": {
+        "street": "Calle Cliente 9",
+        "number": "583",
+        "district": "Comuna Cliente 9",
+        "city": "Ciudad Cliente 9"
+      },
+      "phone_number": "+56 9 64820734"
+    },
+    {
+      "id": 10,
+      "rut": "93259476-3",
+      "name": "Cliente 10",
+      "last_name": "Apellido Cliente 10",
+      "address": {
+        "street": "Calle Cliente 10",
+        "number": "883",
+        "district": "Comuna Cliente 10",
+        "city": "Ciudad Cliente 10"
+      },
+      "phone_number": "+56 9 91066997"
+    },
+    {
+      "id": 11,
+      "rut": "54441314-0",
+      "name": "Cliente 11",
+      "last_name": "Apellido Cliente 11",
+      "address": {
+        "street": "Calle Cliente 11",
+        "number": "881",
+        "district": "Comuna Cliente 11",
+        "city": "Ciudad Cliente 11"
+      },
+      "phone_number": "+56 9 44011015"
+    },
+    {
+      "id": 12,
+      "rut": "43242764-1",
+      "name": "Cliente 12",
+      "last_name": "Apellido Cliente 12",
+      "address": {
+        "street": "Calle Cliente 12",
+        "number": "484",
+        "district": "Comuna Cliente 12",
+        "city": "Ciudad Cliente 12"
+      },
+      "phone_number": "+56 9 7497326"
+    },
+    {
+      "id": 13,
+      "rut": "12116687-4",
+      "name": "Cliente 13",
+      "last_name": "Apellido Cliente 13",
+      "address": {
+        "street": "Calle Cliente 13",
+        "number": "569",
+        "district": "Comuna Cliente 13",
+        "city": "Ciudad Cliente 13"
+      },
+      "phone_number": "+56 9 52480797"
+    },
+    {
+      "id": 14,
+      "rut": "17952099-4",
+      "name": "Cliente 14",
+      "last_name": "Apellido Cliente 14",
+      "address": {
+        "street": "Calle Cliente 14",
+        "number": "436",
+        "district": "Comuna Cliente 14",
+        "city": "Ciudad Cliente 14"
+      },
+      "phone_number": "+56 9 68735691"
+    },
+    {
+      "id": 15,
+      "rut": "60878853-4",
+      "name": "Cliente 15",
+      "last_name": "Apellido Cliente 15",
+      "address": {
+        "street": "Calle Cliente 15",
+        "number": "518",
+        "district": "Comuna Cliente 15",
+        "city": "Ciudad Cliente 15"
+      },
+      "phone_number": "+56 9 95873045"
+    },
+    {
+      "id": 16,
+      "rut": "20625320-1",
+      "name": "Cliente 16",
+      "last_name": "Apellido Cliente 16",
+      "address": {
+        "street": "Calle Cliente 16",
+        "number": "472",
+        "district": "Comuna Cliente 16",
+        "city": "Ciudad Cliente 16"
+      },
+      "phone_number": "+56 9 31822336"
+    },
+    {
+      "id": 17,
+      "rut": "93436131-7",
+      "name": "Cliente 17",
+      "last_name": "Apellido Cliente 17",
+      "address": {
+        "street": "Calle Cliente 17",
+        "number": "32",
+        "district": "Comuna Cliente 17",
+        "city": "Ciudad Cliente 17"
+      },
+      "phone_number": "+56 9 19273704"
+    },
+    {
+      "id": 18,
+      "rut": "74438614-9",
+      "name": "Cliente 18",
+      "last_name": "Apellido Cliente 18",
+      "address": {
+        "street": "Calle Cliente 18",
+        "number": "198",
+        "district": "Comuna Cliente 18",
+        "city": "Ciudad Cliente 18"
+      },
+      "phone_number": "+56 9 58466485"
+    },
+    {
+      "id": 19,
+      "rut": "75092236-8",
+      "name": "Cliente 19",
+      "last_name": "Apellido Cliente 19",
+      "address": {
+        "street": "Calle Cliente 19",
+        "number": "243",
+        "district": "Comuna Cliente 19",
+        "city": "Ciudad Cliente 19"
+      },
+      "phone_number": "+56 9 1280521"
+    },
+    {
+      "id": 20,
+      "rut": "18775976-6",
+      "name": "Cliente 20",
+      "last_name": "Apellido Cliente 20",
+      "address": {
+        "street": "Calle Cliente 20",
+        "number": "401",
+        "district": "Comuna Cliente 20",
+        "city": "Ciudad Cliente 20"
+      },
+      "phone_number": "+56 9 99402155"
+    },
+    {
+      "id": 21,
+      "rut": "44423483-3",
+      "name": "Cliente 21",
+      "last_name": "Apellido Cliente 21",
+      "address": {
+        "street": "Calle Cliente 21",
+        "number": "440",
+        "district": "Comuna Cliente 21",
+        "city": "Ciudad Cliente 21"
+      },
+      "phone_number": "+56 9 25330715"
+    },
+    {
+      "id": 22,
+      "rut": "78106760-4",
+      "name": "Cliente 22",
+      "last_name": "Apellido Cliente 22",
+      "address": {
+        "street": "Calle Cliente 22",
+        "number": "800",
+        "district": "Comuna Cliente 22",
+        "city": "Ciudad Cliente 22"
+      },
+      "phone_number": "+56 9 79670482"
+    },
+    {
+      "id": 23,
+      "rut": "26556578-4",
+      "name": "Cliente 23",
+      "last_name": "Apellido Cliente 23",
+      "address": {
+        "street": "Calle Cliente 23",
+        "number": "836",
+        "district": "Comuna Cliente 23",
+        "city": "Ciudad Cliente 23"
+      },
+      "phone_number": "+56 9 24998230"
+    },
+    {
+      "id": 24,
+      "rut": "48103172-1",
+      "name": "Cliente 24",
+      "last_name": "Apellido Cliente 24",
+      "address": {
+        "street": "Calle Cliente 24",
+        "number": "189",
+        "district": "Comuna Cliente 24",
+        "city": "Ciudad Cliente 24"
+      },
+      "phone_number": "+56 9 90085277"
+    },
+    {
+      "id": 25,
+      "rut": "42987498-8",
+      "name": "Cliente 25",
+      "last_name": "Apellido Cliente 25",
+      "address": {
+        "street": "Calle Cliente 25",
+        "number": "962",
+        "district": "Comuna Cliente 25",
+        "city": "Ciudad Cliente 25"
+      },
+      "phone_number": "+56 9 2523782"
+    },
+    {
+      "id": 26,
+      "rut": "24501440-3",
+      "name": "Cliente 26",
+      "last_name": "Apellido Cliente 26",
+      "address": {
+        "street": "Calle Cliente 26",
+        "number": "818",
+        "district": "Comuna Cliente 26",
+        "city": "Ciudad Cliente 26"
+      },
+      "phone_number": "+56 9 32889209"
+    },
+    {
+      "id": 27,
+      "rut": "7510645-1",
+      "name": "Cliente 27",
+      "last_name": "Apellido Cliente 27",
+      "address": {
+        "street": "Calle Cliente 27",
+        "number": "427",
+        "district": "Comuna Cliente 27",
+        "city": "Ciudad Cliente 27"
+      },
+      "phone_number": "+56 9 58533941"
+    },
+    {
+      "id": 28,
+      "rut": "49165350-8",
+      "name": "Cliente 28",
+      "last_name": "Apellido Cliente 28",
+      "address": {
+        "street": "Calle Cliente 28",
+        "number": "2",
+        "district": "Comuna Cliente 28",
+        "city": "Ciudad Cliente 28"
+      },
+      "phone_number": "+56 9 68671873"
+    },
+    {
+      "id": 29,
+      "rut": "99534539-5",
+      "name": "Cliente 29",
+      "last_name": "Apellido Cliente 29",
+      "address": {
+        "street": "Calle Cliente 29",
+        "number": "766",
+        "district": "Comuna Cliente 29",
+        "city": "Ciudad Cliente 29"
+      },
+      "phone_number": "+56 9 73776435"
+    },
+    {
+      "id": 30,
+      "rut": "242310-3",
+      "name": "Cliente 30",
+      "last_name": "Apellido Cliente 30",
+      "address": {
+        "street": "Calle Cliente 30",
+        "number": "599",
+        "district": "Comuna Cliente 30",
+        "city": "Ciudad Cliente 30"
+      },
+      "phone_number": "+56 9 70574730"
+    },
+    {
+      "id": 31,
+      "rut": "40715411-0",
+      "name": "Cliente 31",
+      "last_name": "Apellido Cliente 31",
+      "address": {
+        "street": "Calle Cliente 31",
+        "number": "339",
+        "district": "Comuna Cliente 31",
+        "city": "Ciudad Cliente 31"
+      },
+      "phone_number": "+56 9 36259091"
+    },
+    {
+      "id": 32,
+      "rut": "23828950-8",
+      "name": "Cliente 32",
+      "last_name": "Apellido Cliente 32",
+      "address": {
+        "street": "Calle Cliente 32",
+        "number": "980",
+        "district": "Comuna Cliente 32",
+        "city": "Ciudad Cliente 32"
+      },
+      "phone_number": "+56 9 79109357"
+    },
+    {
+      "id": 33,
+      "rut": "63076049-7",
+      "name": "Cliente 33",
+      "last_name": "Apellido Cliente 33",
+      "address": {
+        "street": "Calle Cliente 33",
+        "number": "796",
+        "district": "Comuna Cliente 33",
+        "city": "Ciudad Cliente 33"
+      },
+      "phone_number": "+56 9 56260810"
+    },
+    {
+      "id": 34,
+      "rut": "11065093-9",
+      "name": "Cliente 34",
+      "last_name": "Apellido Cliente 34",
+      "address": {
+        "street": "Calle Cliente 34",
+        "number": "375",
+        "district": "Comuna Cliente 34",
+        "city": "Ciudad Cliente 34"
+      },
+      "phone_number": "+56 9 91208797"
+    },
+    {
+      "id": 35,
+      "rut": "49917388-4",
+      "name": "Cliente 35",
+      "last_name": "Apellido Cliente 35",
+      "address": {
+        "street": "Calle Cliente 35",
+        "number": "199",
+        "district": "Comuna Cliente 35",
+        "city": "Ciudad Cliente 35"
+      },
+      "phone_number": "+56 9 11726883"
+    },
+    {
+      "id": 36,
+      "rut": "35369544-3",
+      "name": "Cliente 36",
+      "last_name": "Apellido Cliente 36",
+      "address": {
+        "street": "Calle Cliente 36",
+        "number": "899",
+        "district": "Comuna Cliente 36",
+        "city": "Ciudad Cliente 36"
+      },
+      "phone_number": "+56 9 26528560"
+    },
+    {
+      "id": 37,
+      "rut": "86739820-1",
+      "name": "Cliente 37",
+      "last_name": "Apellido Cliente 37",
+      "address": {
+        "street": "Calle Cliente 37",
+        "number": "708",
+        "district": "Comuna Cliente 37",
+        "city": "Ciudad Cliente 37"
+      },
+      "phone_number": "+56 9 63127890"
+    },
+    {
+      "id": 38,
+      "rut": "29883627-2",
+      "name": "Cliente 38",
+      "last_name": "Apellido Cliente 38",
+      "address": {
+        "street": "Calle Cliente 38",
+        "number": "727",
+        "district": "Comuna Cliente 38",
+        "city": "Ciudad Cliente 38"
+      },
+      "phone_number": "+56 9 34506605"
+    },
+    {
+      "id": 39,
+      "rut": "79408063-7",
+      "name": "Cliente 39",
+      "last_name": "Apellido Cliente 39",
+      "address": {
+        "street": "Calle Cliente 39",
+        "number": "843",
+        "district": "Comuna Cliente 39",
+        "city": "Ciudad Cliente 39"
+      },
+      "phone_number": "+56 9 53956229"
+    },
+    {
+      "id": 40,
+      "rut": "18648903-1",
+      "name": "Cliente 40",
+      "last_name": "Apellido Cliente 40",
+      "address": {
+        "street": "Calle Cliente 40",
+        "number": "276",
+        "district": "Comuna Cliente 40",
+        "city": "Ciudad Cliente 40"
+      },
+      "phone_number": "+56 9 74224434"
+    },
+    {
+      "id": 41,
+      "rut": "2339911-5",
+      "name": "Cliente 41",
+      "last_name": "Apellido Cliente 41",
+      "address": {
+        "street": "Calle Cliente 41",
+        "number": "978",
+        "district": "Comuna Cliente 41",
+        "city": "Ciudad Cliente 41"
+      },
+      "phone_number": "+56 9 72065231"
+    },
+    {
+      "id": 42,
+      "rut": "78100866-5",
+      "name": "Cliente 42",
+      "last_name": "Apellido Cliente 42",
+      "address": {
+        "street": "Calle Cliente 42",
+        "number": "162",
+        "district": "Comuna Cliente 42",
+        "city": "Ciudad Cliente 42"
+      },
+      "phone_number": "+56 9 22885483"
+    },
+    {
+      "id": 43,
+      "rut": "93129706-6",
+      "name": "Cliente 43",
+      "last_name": "Apellido Cliente 43",
+      "address": {
+        "street": "Calle Cliente 43",
+        "number": "792",
+        "district": "Comuna Cliente 43",
+        "city": "Ciudad Cliente 43"
+      },
+      "phone_number": "+56 9 40663686"
+    },
+    {
+      "id": 44,
+      "rut": "70912898-6",
+      "name": "Cliente 44",
+      "last_name": "Apellido Cliente 44",
+      "address": {
+        "street": "Calle Cliente 44",
+        "number": "561",
+        "district": "Comuna Cliente 44",
+        "city": "Ciudad Cliente 44"
+      },
+      "phone_number": "+56 9 37884298"
+    },
+    {
+      "id": 45,
+      "rut": "8909320-2",
+      "name": "Cliente 45",
+      "last_name": "Apellido Cliente 45",
+      "address": {
+        "street": "Calle Cliente 45",
+        "number": "640",
+        "district": "Comuna Cliente 45",
+        "city": "Ciudad Cliente 45"
+      },
+      "phone_number": "+56 9 55233388"
+    },
+    {
+      "id": 46,
+      "rut": "11105861-9",
+      "name": "Cliente 46",
+      "last_name": "Apellido Cliente 46",
+      "address": {
+        "street": "Calle Cliente 46",
+        "number": "378",
+        "district": "Comuna Cliente 46",
+        "city": "Ciudad Cliente 46"
+      },
+      "phone_number": "+56 9 36806283"
+    },
+    {
+      "id": 47,
+      "rut": "2772953-2",
+      "name": "Cliente 47",
+      "last_name": "Apellido Cliente 47",
+      "address": {
+        "street": "Calle Cliente 47",
+        "number": "787",
+        "district": "Comuna Cliente 47",
+        "city": "Ciudad Cliente 47"
+      },
+      "phone_number": "+56 9 89001827"
+    },
+    {
+      "id": 48,
+      "rut": "23260856-9",
+      "name": "Cliente 48",
+      "last_name": "Apellido Cliente 48",
+      "address": {
+        "street": "Calle Cliente 48",
+        "number": "752",
+        "district": "Comuna Cliente 48",
+        "city": "Ciudad Cliente 48"
+      },
+      "phone_number": "+56 9 21928739"
+    },
+    {
+      "id": 49,
+      "rut": "89361072-0",
+      "name": "Cliente 49",
+      "last_name": "Apellido Cliente 49",
+      "address": {
+        "street": "Calle Cliente 49",
+        "number": "76",
+        "district": "Comuna Cliente 49",
+        "city": "Ciudad Cliente 49"
+      },
+      "phone_number": "+56 9 72292527"
+    },
+    {
+      "id": 50,
+      "rut": "89551798-6",
+      "name": "Cliente 50",
+      "last_name": "Apellido Cliente 50",
+      "address": {
+        "street": "Calle Cliente 50",
+        "number": "497",
+        "district": "Comuna Cliente 50",
+        "city": "Ciudad Cliente 50"
+      },
+      "phone_number": "+56 9 89961351"
+    },
+    {
+      "id": 51,
+      "rut": "70517300-8",
+      "name": "Cliente 51",
+      "last_name": "Apellido Cliente 51",
+      "address": {
+        "street": "Calle Cliente 51",
+        "number": "27",
+        "district": "Comuna Cliente 51",
+        "city": "Ciudad Cliente 51"
+      },
+      "phone_number": "+56 9 94756558"
+    },
+    {
+      "id": 52,
+      "rut": "56343882-1",
+      "name": "Cliente 52",
+      "last_name": "Apellido Cliente 52",
+      "address": {
+        "street": "Calle Cliente 52",
+        "number": "261",
+        "district": "Comuna Cliente 52",
+        "city": "Ciudad Cliente 52"
+      },
+      "phone_number": "+56 9 87930887"
+    },
+    {
+      "id": 53,
+      "rut": "47617588-8",
+      "name": "Cliente 53",
+      "last_name": "Apellido Cliente 53",
+      "address": {
+        "street": "Calle Cliente 53",
+        "number": "303",
+        "district": "Comuna Cliente 53",
+        "city": "Ciudad Cliente 53"
+      },
+      "phone_number": "+56 9 33209488"
+    },
+    {
+      "id": 54,
+      "rut": "56343597-2",
+      "name": "Cliente 54",
+      "last_name": "Apellido Cliente 54",
+      "address": {
+        "street": "Calle Cliente 54",
+        "number": "85",
+        "district": "Comuna Cliente 54",
+        "city": "Ciudad Cliente 54"
+      },
+      "phone_number": "+56 9 24861980"
+    },
+    {
+      "id": 55,
+      "rut": "23045981-2",
+      "name": "Cliente 55",
+      "last_name": "Apellido Cliente 55",
+      "address": {
+        "street": "Calle Cliente 55",
+        "number": "158",
+        "district": "Comuna Cliente 55",
+        "city": "Ciudad Cliente 55"
+      },
+      "phone_number": "+56 9 83459231"
+    },
+    {
+      "id": 56,
+      "rut": "57279484-6",
+      "name": "Cliente 56",
+      "last_name": "Apellido Cliente 56",
+      "address": {
+        "street": "Calle Cliente 56",
+        "number": "656",
+        "district": "Comuna Cliente 56",
+        "city": "Ciudad Cliente 56"
+      },
+      "phone_number": "+56 9 9286799"
+    },
+    {
+      "id": 57,
+      "rut": "10346718-6",
+      "name": "Cliente 57",
+      "last_name": "Apellido Cliente 57",
+      "address": {
+        "street": "Calle Cliente 57",
+        "number": "375",
+        "district": "Comuna Cliente 57",
+        "city": "Ciudad Cliente 57"
+      },
+      "phone_number": "+56 9 94288983"
+    },
+    {
+      "id": 58,
+      "rut": "88786333-0",
+      "name": "Cliente 58",
+      "last_name": "Apellido Cliente 58",
+      "address": {
+        "street": "Calle Cliente 58",
+        "number": "939",
+        "district": "Comuna Cliente 58",
+        "city": "Ciudad Cliente 58"
+      },
+      "phone_number": "+56 9 76508261"
+    },
+    {
+      "id": 59,
+      "rut": "91291640-9",
+      "name": "Cliente 59",
+      "last_name": "Apellido Cliente 59",
+      "address": {
+        "street": "Calle Cliente 59",
+        "number": "786",
+        "district": "Comuna Cliente 59",
+        "city": "Ciudad Cliente 59"
+      },
+      "phone_number": "+56 9 32860642"
+    },
+    {
+      "id": 60,
+      "rut": "51660765-8",
+      "name": "Cliente 60",
+      "last_name": "Apellido Cliente 60",
+      "address": {
+        "street": "Calle Cliente 60",
+        "number": "193",
+        "district": "Comuna Cliente 60",
+        "city": "Ciudad Cliente 60"
+      },
+      "phone_number": "+56 9 30017800"
+    },
+    {
+      "id": 61,
+      "rut": "91366500-7",
+      "name": "Cliente 61",
+      "last_name": "Apellido Cliente 61",
+      "address": {
+        "street": "Calle Cliente 61",
+        "number": "616",
+        "district": "Comuna Cliente 61",
+        "city": "Ciudad Cliente 61"
+      },
+      "phone_number": "+56 9 32971184"
+    },
+    {
+      "id": 62,
+      "rut": "45917841-2",
+      "name": "Cliente 62",
+      "last_name": "Apellido Cliente 62",
+      "address": {
+        "street": "Calle Cliente 62",
+        "number": "845",
+        "district": "Comuna Cliente 62",
+        "city": "Ciudad Cliente 62"
+      },
+      "phone_number": "+56 9 86709287"
+    },
+    {
+      "id": 63,
+      "rut": "88541756-7",
+      "name": "Cliente 63",
+      "last_name": "Apellido Cliente 63",
+      "address": {
+        "street": "Calle Cliente 63",
+        "number": "978",
+        "district": "Comuna Cliente 63",
+        "city": "Ciudad Cliente 63"
+      },
+      "phone_number": "+56 9 94356449"
+    },
+    {
+      "id": 64,
+      "rut": "19713416-8",
+      "name": "Cliente 64",
+      "last_name": "Apellido Cliente 64",
+      "address": {
+        "street": "Calle Cliente 64",
+        "number": "318",
+        "district": "Comuna Cliente 64",
+        "city": "Ciudad Cliente 64"
+      },
+      "phone_number": "+56 9 93695072"
+    },
+    {
+      "id": 65,
+      "rut": "54353489-4",
+      "name": "Cliente 65",
+      "last_name": "Apellido Cliente 65",
+      "address": {
+        "street": "Calle Cliente 65",
+        "number": "8",
+        "district": "Comuna Cliente 65",
+        "city": "Ciudad Cliente 65"
+      },
+      "phone_number": "+56 9 34085871"
+    },
+    {
+      "id": 66,
+      "rut": "48150446-8",
+      "name": "Cliente 66",
+      "last_name": "Apellido Cliente 66",
+      "address": {
+        "street": "Calle Cliente 66",
+        "number": "600",
+        "district": "Comuna Cliente 66",
+        "city": "Ciudad Cliente 66"
+      },
+      "phone_number": "+56 9 90332659"
+    },
+    {
+      "id": 67,
+      "rut": "99183834-4",
+      "name": "Cliente 67",
+      "last_name": "Apellido Cliente 67",
+      "address": {
+        "street": "Calle Cliente 67",
+        "number": "506",
+        "district": "Comuna Cliente 67",
+        "city": "Ciudad Cliente 67"
+      },
+      "phone_number": "+56 9 27669450"
+    },
+    {
+      "id": 68,
+      "rut": "74403494-6",
+      "name": "Cliente 68",
+      "last_name": "Apellido Cliente 68",
+      "address": {
+        "street": "Calle Cliente 68",
+        "number": "513",
+        "district": "Comuna Cliente 68",
+        "city": "Ciudad Cliente 68"
+      },
+      "phone_number": "+56 9 3123463"
+    },
+    {
+      "id": 69,
+      "rut": "69188478-6",
+      "name": "Cliente 69",
+      "last_name": "Apellido Cliente 69",
+      "address": {
+        "street": "Calle Cliente 69",
+        "number": "585",
+        "district": "Comuna Cliente 69",
+        "city": "Ciudad Cliente 69"
+      },
+      "phone_number": "+56 9 59976358"
+    },
+    {
+      "id": 70,
+      "rut": "20327058-1",
+      "name": "Cliente 70",
+      "last_name": "Apellido Cliente 70",
+      "address": {
+        "street": "Calle Cliente 70",
+        "number": "278",
+        "district": "Comuna Cliente 70",
+        "city": "Ciudad Cliente 70"
+      },
+      "phone_number": "+56 9 66493985"
+    },
+    {
+      "id": 71,
+      "rut": "48815233-3",
+      "name": "Cliente 71",
+      "last_name": "Apellido Cliente 71",
+      "address": {
+        "street": "Calle Cliente 71",
+        "number": "598",
+        "district": "Comuna Cliente 71",
+        "city": "Ciudad Cliente 71"
+      },
+      "phone_number": "+56 9 76073229"
+    },
+    {
+      "id": 72,
+      "rut": "61453053-1",
+      "name": "Cliente 72",
+      "last_name": "Apellido Cliente 72",
+      "address": {
+        "street": "Calle Cliente 72",
+        "number": "663",
+        "district": "Comuna Cliente 72",
+        "city": "Ciudad Cliente 72"
+      },
+      "phone_number": "+56 9 25856266"
+    },
+    {
+      "id": 73,
+      "rut": "13771471-5",
+      "name": "Cliente 73",
+      "last_name": "Apellido Cliente 73",
+      "address": {
+        "street": "Calle Cliente 73",
+        "number": "769",
+        "district": "Comuna Cliente 73",
+        "city": "Ciudad Cliente 73"
+      },
+      "phone_number": "+56 9 40792288"
+    },
+    {
+      "id": 74,
+      "rut": "50989331-5",
+      "name": "Cliente 74",
+      "last_name": "Apellido Cliente 74",
+      "address": {
+        "street": "Calle Cliente 74",
+        "number": "222",
+        "district": "Comuna Cliente 74",
+        "city": "Ciudad Cliente 74"
+      },
+      "phone_number": "+56 9 32153366"
+    },
+    {
+      "id": 75,
+      "rut": "53829358-4",
+      "name": "Cliente 75",
+      "last_name": "Apellido Cliente 75",
+      "address": {
+        "street": "Calle Cliente 75",
+        "number": "903",
+        "district": "Comuna Cliente 75",
+        "city": "Ciudad Cliente 75"
+      },
+      "phone_number": "+56 9 55867779"
+    },
+    {
+      "id": 76,
+      "rut": "24056188-5",
+      "name": "Cliente 76",
+      "last_name": "Apellido Cliente 76",
+      "address": {
+        "street": "Calle Cliente 76",
+        "number": "56",
+        "district": "Comuna Cliente 76",
+        "city": "Ciudad Cliente 76"
+      },
+      "phone_number": "+56 9 42680500"
+    },
+    {
+      "id": 77,
+      "rut": "56560325-7",
+      "name": "Cliente 77",
+      "last_name": "Apellido Cliente 77",
+      "address": {
+        "street": "Calle Cliente 77",
+        "number": "186",
+        "district": "Comuna Cliente 77",
+        "city": "Ciudad Cliente 77"
+      },
+      "phone_number": "+56 9 46405810"
+    },
+    {
+      "id": 78,
+      "rut": "45955648-4",
+      "name": "Cliente 78",
+      "last_name": "Apellido Cliente 78",
+      "address": {
+        "street": "Calle Cliente 78",
+        "number": "287",
+        "district": "Comuna Cliente 78",
+        "city": "Ciudad Cliente 78"
+      },
+      "phone_number": "+56 9 13636054"
+    },
+    {
+      "id": 79,
+      "rut": "41001331-6",
+      "name": "Cliente 79",
+      "last_name": "Apellido Cliente 79",
+      "address": {
+        "street": "Calle Cliente 79",
+        "number": "503",
+        "district": "Comuna Cliente 79",
+        "city": "Ciudad Cliente 79"
+      },
+      "phone_number": "+56 9 40048197"
+    },
+    {
+      "id": 80,
+      "rut": "96236789-9",
+      "name": "Cliente 80",
+      "last_name": "Apellido Cliente 80",
+      "address": {
+        "street": "Calle Cliente 80",
+        "number": "58",
+        "district": "Comuna Cliente 80",
+        "city": "Ciudad Cliente 80"
+      },
+      "phone_number": "+56 9 72679130"
+    },
+    {
+      "id": 81,
+      "rut": "72151089-2",
+      "name": "Cliente 81",
+      "last_name": "Apellido Cliente 81",
+      "address": {
+        "street": "Calle Cliente 81",
+        "number": "933",
+        "district": "Comuna Cliente 81",
+        "city": "Ciudad Cliente 81"
+      },
+      "phone_number": "+56 9 89576510"
+    },
+    {
+      "id": 82,
+      "rut": "63948066-0",
+      "name": "Cliente 82",
+      "last_name": "Apellido Cliente 82",
+      "address": {
+        "street": "Calle Cliente 82",
+        "number": "324",
+        "district": "Comuna Cliente 82",
+        "city": "Ciudad Cliente 82"
+      },
+      "phone_number": "+56 9 190393"
+    },
+    {
+      "id": 83,
+      "rut": "29854037-2",
+      "name": "Cliente 83",
+      "last_name": "Apellido Cliente 83",
+      "address": {
+        "street": "Calle Cliente 83",
+        "number": "497",
+        "district": "Comuna Cliente 83",
+        "city": "Ciudad Cliente 83"
+      },
+      "phone_number": "+56 9 4696062"
+    },
+    {
+      "id": 84,
+      "rut": "32945074-5",
+      "name": "Cliente 84",
+      "last_name": "Apellido Cliente 84",
+      "address": {
+        "street": "Calle Cliente 84",
+        "number": "463",
+        "district": "Comuna Cliente 84",
+        "city": "Ciudad Cliente 84"
+      },
+      "phone_number": "+56 9 89019560"
+    },
+    {
+      "id": 85,
+      "rut": "36698517-3",
+      "name": "Cliente 85",
+      "last_name": "Apellido Cliente 85",
+      "address": {
+        "street": "Calle Cliente 85",
+        "number": "215",
+        "district": "Comuna Cliente 85",
+        "city": "Ciudad Cliente 85"
+      },
+      "phone_number": "+56 9 16709045"
+    },
+    {
+      "id": 86,
+      "rut": "32323018-7",
+      "name": "Cliente 86",
+      "last_name": "Apellido Cliente 86",
+      "address": {
+        "street": "Calle Cliente 86",
+        "number": "447",
+        "district": "Comuna Cliente 86",
+        "city": "Ciudad Cliente 86"
+      },
+      "phone_number": "+56 9 10600111"
+    },
+    {
+      "id": 87,
+      "rut": "20661501-4",
+      "name": "Cliente 87",
+      "last_name": "Apellido Cliente 87",
+      "address": {
+        "street": "Calle Cliente 87",
+        "number": "490",
+        "district": "Comuna Cliente 87",
+        "city": "Ciudad Cliente 87"
+      },
+      "phone_number": "+56 9 83729491"
+    },
+    {
+      "id": 88,
+      "rut": "95061544-5",
+      "name": "Cliente 88",
+      "last_name": "Apellido Cliente 88",
+      "address": {
+        "street": "Calle Cliente 88",
+        "number": "983",
+        "district": "Comuna Cliente 88",
+        "city": "Ciudad Cliente 88"
+      },
+      "phone_number": "+56 9 59210442"
+    },
+    {
+      "id": 89,
+      "rut": "96460933-9",
+      "name": "Cliente 89",
+      "last_name": "Apellido Cliente 89",
+      "address": {
+        "street": "Calle Cliente 89",
+        "number": "241",
+        "district": "Comuna Cliente 89",
+        "city": "Ciudad Cliente 89"
+      },
+      "phone_number": "+56 9 74464314"
+    },
+    {
+      "id": 90,
+      "rut": "11007721-0",
+      "name": "Cliente 90",
+      "last_name": "Apellido Cliente 90",
+      "address": {
+        "street": "Calle Cliente 90",
+        "number": "238",
+        "district": "Comuna Cliente 90",
+        "city": "Ciudad Cliente 90"
+      },
+      "phone_number": "+56 9 82656882"
+    },
+    {
+      "id": 91,
+      "rut": "66943314-6",
+      "name": "Cliente 91",
+      "last_name": "Apellido Cliente 91",
+      "address": {
+        "street": "Calle Cliente 91",
+        "number": "377",
+        "district": "Comuna Cliente 91",
+        "city": "Ciudad Cliente 91"
+      },
+      "phone_number": "+56 9 79957903"
+    },
+    {
+      "id": 92,
+      "rut": "17006057-5",
+      "name": "Cliente 92",
+      "last_name": "Apellido Cliente 92",
+      "address": {
+        "street": "Calle Cliente 92",
+        "number": "606",
+        "district": "Comuna Cliente 92",
+        "city": "Ciudad Cliente 92"
+      },
+      "phone_number": "+56 9 57846206"
+    },
+    {
+      "id": 93,
+      "rut": "59388406-2",
+      "name": "Cliente 93",
+      "last_name": "Apellido Cliente 93",
+      "address": {
+        "street": "Calle Cliente 93",
+        "number": "534",
+        "district": "Comuna Cliente 93",
+        "city": "Ciudad Cliente 93"
+      },
+      "phone_number": "+56 9 5750332"
+    },
+    {
+      "id": 94,
+      "rut": "81027165-0",
+      "name": "Cliente 94",
+      "last_name": "Apellido Cliente 94",
+      "address": {
+        "street": "Calle Cliente 94",
+        "number": "683",
+        "district": "Comuna Cliente 94",
+        "city": "Ciudad Cliente 94"
+      },
+      "phone_number": "+56 9 35031926"
+    },
+    {
+      "id": 95,
+      "rut": "60014586-4",
+      "name": "Cliente 95",
+      "last_name": "Apellido Cliente 95",
+      "address": {
+        "street": "Calle Cliente 95",
+        "number": "953",
+        "district": "Comuna Cliente 95",
+        "city": "Ciudad Cliente 95"
+      },
+      "phone_number": "+56 9 62512567"
+    },
+    {
+      "id": 96,
+      "rut": "54811571-6",
+      "name": "Cliente 96",
+      "last_name": "Apellido Cliente 96",
+      "address": {
+        "street": "Calle Cliente 96",
+        "number": "551",
+        "district": "Comuna Cliente 96",
+        "city": "Ciudad Cliente 96"
+      },
+      "phone_number": "+56 9 34066300"
+    },
+    {
+      "id": 97,
+      "rut": "33762568-8",
+      "name": "Cliente 97",
+      "last_name": "Apellido Cliente 97",
+      "address": {
+        "street": "Calle Cliente 97",
+        "number": "77",
+        "district": "Comuna Cliente 97",
+        "city": "Ciudad Cliente 97"
+      },
+      "phone_number": "+56 9 10242841"
+    },
+    {
+      "id": 98,
+      "rut": "11023689-1",
+      "name": "Cliente 98",
+      "last_name": "Apellido Cliente 98",
+      "address": {
+        "street": "Calle Cliente 98",
+        "number": "511",
+        "district": "Comuna Cliente 98",
+        "city": "Ciudad Cliente 98"
+      },
+      "phone_number": "+56 9 44374380"
+    },
+    {
+      "id": 99,
+      "rut": "64948281-4",
+      "name": "Cliente 99",
+      "last_name": "Apellido Cliente 99",
+      "address": {
+        "street": "Calle Cliente 99",
+        "number": "124",
+        "district": "Comuna Cliente 99",
+        "city": "Ciudad Cliente 99"
+      },
+      "phone_number": "+56 9 2360015"
+    },
+    {
+      "id": 100,
+      "rut": "99179469-5",
+      "name": "Cliente 100",
+      "last_name": "Apellido Cliente 100",
+      "address": {
+        "street": "Calle Cliente 100",
+        "number": "140",
+        "district": "Comuna Cliente 100",
+        "city": "Ciudad Cliente 100"
+      },
+      "phone_number": "+56 9 64034319"
+    },
+    {
+      "id": 101,
+      "rut": "15770300-1",
+      "name": "Cliente 101",
+      "last_name": "Apellido Cliente 101",
+      "address": {
+        "street": "Calle Cliente 101",
+        "number": "813",
+        "district": "Comuna Cliente 101",
+        "city": "Ciudad Cliente 101"
+      },
+      "phone_number": "+56 9 43016071"
+    },
+    {
+      "id": 102,
+      "rut": "95983782-4",
+      "name": "Cliente 102",
+      "last_name": "Apellido Cliente 102",
+      "address": {
+        "street": "Calle Cliente 102",
+        "number": "30",
+        "district": "Comuna Cliente 102",
+        "city": "Ciudad Cliente 102"
+      },
+      "phone_number": "+56 9 6300979"
+    }
+  ]
+}

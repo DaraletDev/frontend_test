@@ -39,7 +39,13 @@ const AddCustomerModal = ({
                 <div></div>
             </div>
 
-            <form onSubmit={handleAddClient} className="px-20">
+            <form
+                name="addCustomer"
+                // onSubmit={() => {
+                //     handleAddClient();
+                // }}
+                className="px-20"
+            >
                 <div className="flex flex-col space-y-2">
                     <div className="flex items-center gap-2">
                         <div className="flex flex-col">
@@ -221,11 +227,16 @@ const AddCustomerModal = ({
                     </div>
 
                     <div className="w-full flex justify-end">
-                        <input
+                        <button
+                            onClick={(e) => {
+                                e.preventDefault();
+                                handleAddClient();
+                            }}
                             type="submit"
-                            value="Añadir cliente"
                             className="bg-blue-500 text-white font-bold px-7 py-2 rounded mt-5"
-                        />
+                        >
+                            Añadir
+                        </button>
                     </div>
                 </div>
             </form>

@@ -28,15 +28,14 @@ class Sale {
         );
     }
 }
-
-// Mapear datos y crear instancias de Sale
+// Poblar con Datos
 const sales = salesData.sales.map((saleData) => {
     const sale = new Sale(
         saleData.id_sale,
         saleData.date_sale,
-        saleData.document.customer,
-        saleData.document.branch_office,
-        saleData.document.currency
+        saleData.customer,
+        saleData.branch_office,
+        saleData.currency
     );
 
     // Agregar detalles a la venta

@@ -18,6 +18,7 @@ class BranchOffice {
 const branchOfficesData = branch_offices;
 const productsData = products;
 
+// Poblar con datos
 export const branchOfficesList = branchOfficesData.branch_offices.map(
     (office) => {
         const branchOffice = new BranchOffice(

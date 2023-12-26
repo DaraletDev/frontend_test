@@ -1,0 +1,49 @@
+{
+    "sellers": [
+        {
+            "id": 1,
+            "rut": "123456789",
+            "name": "Juan",
+            "last_name": "Pérez",
+            "address": {
+                "street": "Calle Principal",
+                "number": "123",
+                "district": "Centro",
+                "city": "Ciudad"
+            },
+            "phoneNumber": "987654321",
+            "birthdate": "1990-05-15",
+            "email": "juan.perez@example.com"
+        },
+        {
+            "id": 2,
+            "rut": "987654321",
+            "name": "María",
+            "last_name": "Gómez",
+            "address": {
+                "street": "Avenida Secundaria",
+                "number": "456",
+                "district": "Oeste",
+                "city": "Pueblo"
+            },
+            "phoneNumber": "123456789",
+            "birthdate": "1985-08-20",
+            "email": "maria.gomez@example.com"
+        },
+        {
+            "id": 3,
+            "rut": "987654321",
+            "name": "Diego",
+            "last_name": "Carrasco",
+            "address": {
+                "street": "Avenida Terciaria",
+                "number": "456",
+                "district": "Oeste",
+                "city": "Pueblo"
+            },
+            "phoneNumber": "123456789",
+            "birthdate": "1985-08-20",
+            "email": "diego.carrasco@example.com"
+        }
+    ]
+}

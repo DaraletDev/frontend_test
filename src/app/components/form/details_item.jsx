@@ -1,11 +1,17 @@
-import { faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
 import { branchOfficesList } from '../../../../models/branch_office.model';
 import productsData from '../../../../data/products.json';
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details, handleDeleteDetail }) => {
+export const DetailsItem = ({
+    item,
+    handleFieldChange,
+    selectedCountry,
+    details,
+    handleDeleteDetail
+}) => {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [branchOfficeProducts, setBranchOfficeProducts] = useState([]);
     const [productPrice, setProductPrice] = useState(0);
@@ -50,12 +56,11 @@ export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details,
         }
     };
 
-
     return (
         <>
-            <div className="flex justify-between space-x-10 pt-4">
+            <div className="flex flex-col md:flex-row justify-between  md:space-x-10 pt-4">
                 {/* Name */}
-                <div className="flex flex-col w-3/6 space-y-2">
+                <div className="flex flex-col w-full md:w-3/6 space-y-2">
                     <label
                         htmlFor="name"
                         className="text-slate-400 font-semibold"
@@ -76,7 +81,7 @@ export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details,
                 </div>
 
                 {/* Quantity */}
-                <div className="flex flex-col w-1/6 space-y-2">
+                <div className="flex flex-col w-full md:w-1/6 space-y-2">
                     <label
                         htmlFor="quantity"
                         className="text-slate-400 font-semibold"
@@ -111,7 +116,7 @@ export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details,
                 </div>
 
                 {/* Price */}
-                <div className="flex flex-col w-1/6 space-y-2">
+                <div className="flex flex-col w-full md:w-1/6 space-y-2">
                     <label
                         htmlFor="price"
                         className="text-slate-400 font-semibold"
@@ -131,7 +136,7 @@ export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details,
                 </div>
 
                 {/* Subtotal */}
-                <div className="flex flex-col w-1/6 space-y-2">
+                <div className="flex flex-col w-full md:w-1/6 space-y-2">
                     <label
                         htmlFor="subtotal"
                         className="text-slate-400 font-semibold"
@@ -149,13 +154,13 @@ export const DetailsItem = ({ item, handleFieldChange, selectedCountry, details,
 
                 {/* Delete detail */}
                 <button
-                      onClick={(e) => {
+                    onClick={(e) => {
                         e.preventDefault();
-                        handleAddDetail();
+                        handleDeleteDetail();
                     }}
                     className="bg-blue-500 h-10 self-center mt-8 text-white font-bold px-5 py-2"
                 >
-                    <FontAwesomeIcon icon={faMinus} />
+                    <FontAwesomeIcon icon={faX} />
                 </button>
             </div>
         </>
