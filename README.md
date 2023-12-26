@@ -8,7 +8,7 @@ npm i
 
 ### [ 2 ] Ejecute el servidor JSON
 
-Debe ejecutar el siguiente comando en otra consola:
+Debe ejecutar el siguiente comando en otra consola (shift + ctrl + ñ):
 
 ```bash
 npm run json-server
@@ -26,9 +26,6 @@ pnpm dev
 bun dev
 ```
 
-
-
-Abra http://localhost:3000 
-
+Abra http://localhost:3000
 
 Ya puede usar correctamente el sistema.
