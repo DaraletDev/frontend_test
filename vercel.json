@@ -12,15 +12,23 @@
     ],
     "routes": [
         {
-            "src": "/api/.*",
-            "dest": "/api/index.js"
+            "src": "/sales",
+            "dest": "/sales.json"
         },
         {
-            "handle": "filesystem"
-        },
-        {
-            "src": ".*",
+            "src": "/(.*)",
             "dest": "/index.html"
         }
-    ]
+    ],
+    "env": {
+        "NEXT_PUBLIC_API_URL": "/sales"
+    },
+    "dev": {
+        "scripts": {
+            "build": "npm run dev && npm run json-server",
+            "output": {
+                "public": "out"
+            }
+        }
+    }
 }
