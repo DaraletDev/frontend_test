@@ -84,7 +84,7 @@ const AllSalesPage = () => {
                                 </td>
                                 <td className="py-2 px-4">{sale.customer}</td>
                                 <td className="py-2 px-4">
-                                    {sale.branch_office}
+                                    {sale.branchOffice}
                                 </td>
                                 <td className="py-2 px-4">{sale.currency}</td>
                                 <td className="py-2 px-4">{sale.total}</td>

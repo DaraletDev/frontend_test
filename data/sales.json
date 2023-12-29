@@ -4,7 +4,7 @@
       "id": 1,
       "date": "2023-03-22",
       "customer": 1,
-      "branch_office": "Peru",
+      "branchOffice": "Peru",
       "currency": "PEN",
       "details": [
         {
@@ -28,7 +28,7 @@
       "id": 2,
       "date": "2023-03-22",
       "customer": 1,
-      "branch_office": "Peru",
+      "branchOffice": "Peru",
       "currency": "PEN",
       "details": [
         {

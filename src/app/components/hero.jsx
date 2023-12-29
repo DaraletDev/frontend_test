@@ -47,7 +47,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-    /* <HeroAnimation /> */
-}

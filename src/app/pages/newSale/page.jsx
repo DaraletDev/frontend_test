@@ -70,10 +70,7 @@ const NewSale = () => {
         e.preventDefault();
         try {
             const detailsIncomplete = details.some(
-                (detail) =>
-                    !detail.name || // Agrega aquí todas las propiedades que deben estar presentes
-                    !detail.quantity ||
-                    !detail.price
+                (detail) => !detail.name || !detail.quantity || !detail.price
             );
 
             if (detailsIncomplete) {
@@ -101,6 +98,10 @@ const NewSale = () => {
                 );
                 return;
             }
+            const newTotal = details.reduce(
+                (sum, detail) => sum + (parseInt(detail.subtotal) || 0),
+                0
+            );
 
             const newSale = {
                 id: uuidv4(),
@@ -111,8 +112,10 @@ const NewSale = () => {
                 details: details.map((detail) => ({
                     name: detail.name,
                     quantity: detail.quantity,
-                    price: detail.price
-                }))
+                    price: detail.price,
+                    subtotal: detail.subtotal
+                })),
+                total: newTotal
             };
 
             await addSale(newSale);
