@@ -177,7 +177,7 @@ const NewSale = () => {
                     <input
                         type="submit"
                         value="Save"
-                        className="bg-blue-500 h-10 self-center text-white font-semibold px-10 py-2"
+                        className="cursor-pointer hover:bg-blue-400 bg-blue-500 h-10 self-center text-white font-semibold px-10 py-2"
                     />
                 </div>
             </form>

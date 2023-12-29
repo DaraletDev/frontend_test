@@ -174,7 +174,7 @@ const DocumentSection = ({
                                 e.preventDefault();
                                 setIsOpen(true);
                             }}
-                            className="bg-blue-500 text-white font-bold px-5 py-2"
+                            className="cursor-pointer hover:bg-blue-400 bg-blue-500 text-white font-bold px-5 py-2"
                         >
                             <FontAwesomeIcon icon={faPlus} />
                         </button>

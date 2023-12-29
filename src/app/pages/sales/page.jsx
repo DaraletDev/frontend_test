@@ -191,7 +191,7 @@ const AllSalesPage = () => {
                     'flex justify-center list-none p-0 m-4 mt-10'
                 }
                 activeClassName={
-                    'bg-blue-500 text-white border border-blue-500 rounded p-2 mx-1 cursor-pointer'
+                    'bg-blue-500 text-white border border-blue-500 rounded p-2 mx-1 cursor-pointer hover:bg-blue-400'
                 }
                 pageClassName={'border px-4 py-2 rounded cursor-pointer mx-1'}
                 previousClassName={

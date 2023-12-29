@@ -14,7 +14,7 @@ const DetailsSection = ({
                 Details
             </h3>
             <button
-                className="bg-blue-500 text-white font-semibold px-10 py-2 mt-5"
+                className="cursor-pointer hover:bg-blue-400 bg-blue-500 text-white font-semibold px-10 py-2 mt-5"
                 onClick={(e) => {
                     e.preventDefault();
                     handleAddDetail();

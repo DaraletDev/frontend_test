@@ -158,7 +158,7 @@ export const DetailsItem = ({
                         e.preventDefault();
                         handleDeleteDetail();
                     }}
-                    className="bg-blue-500 h-10 self-center mt-8 text-white font-bold px-5 py-2"
+                    className="cursor-pointer hover:bg-blue-400 bg-blue-500 h-10 self-center mt-8 text-white font-bold px-5 py-2"
                 >
                     <FontAwesomeIcon icon={faX} />
                 </button>
