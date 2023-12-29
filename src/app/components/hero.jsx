@@ -24,7 +24,7 @@ const Hero = () => {
                     </button>
                 </div>
                 <div className="relative">
-                    <Image
+                    {/* <Image
                         src="/assets/hero_mobile_img.svg"
                         layout="responsive"
                         width={75}
@@ -39,7 +39,8 @@ const Hero = () => {
                         height={75}
                         alt="Blue background color and icon of card"
                         className="hidden lg:block md:w-1/2 lg:w-1/3"
-                    />
+                    /> */}
+                    <HeroAnimation />
                 </div>
             </main>
         </>
