@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3001';
+// const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'https://json-server-vercel-ecru-zeta.vercel.app';
 
 export const addDetail = async (detail) => {
     try {

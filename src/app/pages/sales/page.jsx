@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import AdminLayout from '../admin/page';
-import { getAllSales } from '../../../../api';
+import { getAllSales } from '../../../../api/api';
 import ReactPaginate from 'react-paginate';
 
 const AllSalesPage = () => {

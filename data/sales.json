@@ -47,62 +47,6 @@
         }
       ],
       "total": 8000
-    },
-    {
-      "id": "6f3b1e12-5194-4ca7-9c52-a22ed18b46fc",
-      "date": "2023-12-26T00:49:04.024Z",
-      "customer": 2,
-      "branchOffice": "Chile",
-      "currency": "CLP",
-      "details": [
-        {
-          "name": "Product 17",
-          "quantity": 1,
-          "price": 1649
-        }
-      ]
-    },
-    {
-      "id": "0e882d9f-6cc8-4d22-90de-085c516cc6c7",
-      "date": "2023-12-26T00:49:15.650Z",
-      "customer": 2,
-      "branchOffice": "Argentina",
-      "currency": "ARS",
-      "details": [
-        {
-          "name": "Product 36",
-          "quantity": 1,
-          "price": 1794
-        }
-      ]
-    },
-    {
-      "id": "d7ab9d12-0127-4f77-a979-330d5b0b5961",
-      "date": "2023-12-26T00:49:35.321Z",
-      "customer": 103,
-      "branchOffice": "Argentina",
-      "currency": "ARS",
-      "details": [
-        {
-          "name": "Product 36",
-          "quantity": 1,
-          "price": 1794
-        }
-      ]
-    },
-    {
-      "id": "54344305-2a34-42e4-96df-5bf68d6dbebc",
-      "date": "2023-12-26T01:32:43.907Z",
-      "customer": 1,
-      "branchOffice": "Peru",
-      "currency": "PEN",
-      "details": [
-        {
-          "name": "Product 12",
-          "quantity": 1,
-          "price": 1300
-        }
-      ]
     }
   ]
 }

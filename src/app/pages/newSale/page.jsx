@@ -5,7 +5,7 @@ import DetailsSection from '@/app/components/form/details_section';
 import AdminLayout from '@/app/pages/admin/page';
 import { v4 as uuidv4 } from 'uuid';
 import { toast } from 'react-toastify';
-import { addSale } from '../../../../api';
+import { addSale } from '../../../../api/api';
 
 const NewSale = () => {
     // Document Section
