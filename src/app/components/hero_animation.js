@@ -21,7 +21,6 @@ const HeroAnimation = () => {
         <Lottie
             animationData={animationData}
             loop={false} 
-            priority
         />
     ) : null;
 };
